@@ -41,5 +41,3 @@ class MainPage(BasePage):
         self.browser.find_element_by_name('agree').click()
         self.browser.find_element_by_css_selector('.btn-primary').click()
         self.browser.find_element_by_link_text('Continue').click()
-
-

@@ -2,8 +2,7 @@ from page_objects.AdminPage import AdminPage
 
 
 def test_find_el_on_admin_page(browser):
-    admin_page = AdminPage(browser)
-    admin_page.open_url()
+    admin_page = AdminPage(browser).open()
     admin_page.find_logo_open_cart()
     admin_page.find_input_username()
     admin_page.find_h1_in_form()
@@ -12,8 +11,7 @@ def test_find_el_on_admin_page(browser):
 
 
 def test_add_product(browser):
-    admin_page = AdminPage(browser)
-    admin_page.open_url()
+    admin_page = AdminPage(browser).open()
     admin_page.login('user', 'bitnami')
     admin_page.verify_title('Dashboard')
     admin_page.goto_all_product()

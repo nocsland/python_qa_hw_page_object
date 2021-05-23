@@ -1,6 +1,4 @@
 from page_objects.BasePage import BasePage
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
 class CatalogPage(BasePage):
@@ -20,4 +18,3 @@ class CatalogPage(BasePage):
 
     def find_search_button(self):
         return self.browser.find_element_by_xpath('//*[@id="search"]/span/button')
-

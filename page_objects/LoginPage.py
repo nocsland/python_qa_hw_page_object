@@ -21,5 +21,3 @@ class LoginPage(BasePage):
 
     def find_login_button(self):
         return self.browser.find_element_by_xpath('//*[@id="content"]//form/input')
-
-
